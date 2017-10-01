@@ -1,0 +1,6 @@
+<ifmodule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URI} !^/index.php$
+RewriteRule ^.+$ / [R=302,NC,L]
+</ifmodule>
